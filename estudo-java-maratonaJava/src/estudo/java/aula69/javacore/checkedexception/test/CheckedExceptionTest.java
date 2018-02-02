@@ -7,6 +7,7 @@ public class CheckedExceptionTest {
 
 	public static void main(String[] args) {
 		
+		criarArquivo();
 
 	}
 	
@@ -14,7 +15,8 @@ public class CheckedExceptionTest {
 		File file = new File("teste.txt");
 		
 		try {
-			file.createNewFile();
+			System.out.println("Arquivo criado: ?" + file.createNewFile());
+			System.out.println("Arquivo criado");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
